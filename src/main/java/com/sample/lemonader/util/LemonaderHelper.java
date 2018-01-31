@@ -7,7 +7,7 @@ import com.sample.lemonader.ingredient.Water;
 
 public class LemonaderHelper {
 
-    public Lemonader getLemonader(int waterAmount, boolean isWaterHot, int lemonQuantity, int sugarAmount){
+    public Lemonader getLemonader(int waterAmount, boolean isWaterHot, int lemonQuantity, int sugarAmount) {
         Water w = new Water(); // TODO remove hard dependency via Dagger 2
         w.setAmount(waterAmount);
         w.setCold(isWaterHot);

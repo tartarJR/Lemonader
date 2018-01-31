@@ -8,7 +8,7 @@ import dagger.Provides;
 public class LemonaderHelperProvider {
 
     @Provides
-    public LemonaderHelper getLemonaderHelper(){
+    public LemonaderHelper getLemonaderHelper() {
         return new LemonaderHelper();
     }
 

@@ -6,7 +6,6 @@ public class WaterCooler {
 
     private Water water;
 
-    // TODO constructor injection needed
     public WaterCooler(Water water) {
         this.water = water;
     }

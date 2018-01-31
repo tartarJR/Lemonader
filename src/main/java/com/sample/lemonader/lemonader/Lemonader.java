@@ -5,6 +5,8 @@ import com.sample.lemonader.ingredient.Lemon;
 import com.sample.lemonader.ingredient.Sugar;
 import com.sample.lemonader.ingredient.Water;
 
+import javax.inject.Inject;
+
 public class Lemonader {
     private Water water;
     private Lemon lemon;
@@ -12,7 +14,6 @@ public class Lemonader {
 
     private WaterCooler waterCooler;
 
-    // TODO constructor injection needed
     public Lemonader(Water water, Lemon lemon, Sugar sugar) {
         this.water = water;
         this.lemon = lemon;
@@ -20,7 +21,7 @@ public class Lemonader {
         this.waterCooler = new WaterCooler(water); // TODO remove hard dependency via Dagger 2
     }
 
-    public void makeLemonade(){
+    public void makeLemonade() {
         System.out.println("Making lemonade..");
         waterCooler.coolItUpTheWater();
         System.out.println("Lemonade has been made with " + water.getAmount() + " liters of water, " + sugar.getAmount() + " kilograms of sugar and " + lemon.getQuantity() + " lemons.");
