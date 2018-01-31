@@ -12,9 +12,7 @@ public class SecondLemonadeDealer implements Dealer {
 
     private static final String CLASS_NAME = SecondLemonadeDealer.class.getSimpleName();
 
-    @Inject
-    LemonaderHelper lemonaderHelper;
-
+    private LemonaderHelper lemonaderHelper;
     private Lemonader lemonader;
 
     public SecondLemonadeDealer() {
@@ -33,5 +31,10 @@ public class SecondLemonadeDealer implements Dealer {
     private void injectDependency() {
         LemonaderComponent component = DaggerLemonaderComponent.create();
         component.provideLemonaderHelper(this);
+    }
+
+    @Inject
+    public void setLemonaderHelper(LemonaderHelper lemonaderHelper) {
+        this.lemonaderHelper = lemonaderHelper;
     }
 }

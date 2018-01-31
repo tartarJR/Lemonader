@@ -13,8 +13,7 @@ public class FirstLemonadeDealer implements Dealer {
     private static final String CLASS_NAME = SecondLemonadeDealer.class.getSimpleName();
 
     @Inject
-    LemonaderHelper lemonaderHelper;
-
+    public LemonaderHelper lemonaderHelper;
     private Lemonader lemonader;
 
     public FirstLemonadeDealer() {
