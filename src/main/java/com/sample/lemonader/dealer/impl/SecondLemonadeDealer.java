@@ -15,8 +15,9 @@ public class SecondLemonadeDealer implements Dealer {
     private LemonaderHelper lemonaderHelper;
     private Lemonader lemonader;
 
+    @Inject
     public SecondLemonadeDealer() {
-        injectDependency();
+
     }
 
     @Override
@@ -26,11 +27,6 @@ public class SecondLemonadeDealer implements Dealer {
         System.out.println(CLASS_NAME + " is making lemonade..");
         lemonader.makeLemonade();
         System.out.println(CLASS_NAME + " has made lemonade");
-    }
-
-    private void injectDependency() {
-        LemonaderComponent component = DaggerLemonaderComponent.create();
-        component.provideLemonaderHelper(this);
     }
 
     @Inject

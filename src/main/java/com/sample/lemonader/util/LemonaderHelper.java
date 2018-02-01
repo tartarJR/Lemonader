@@ -1,9 +1,12 @@
 package com.sample.lemonader.util;
 
+import com.sample.lemonader.di.LemonaderComponent;
 import com.sample.lemonader.lemonader.Lemonader;
 import com.sample.lemonader.ingredient.Lemon;
 import com.sample.lemonader.ingredient.Sugar;
 import com.sample.lemonader.ingredient.Water;
+
+import javax.inject.Inject;
 
 public class LemonaderHelper {
 

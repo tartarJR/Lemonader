@@ -16,8 +16,9 @@ public class FirstLemonadeDealer implements Dealer {
     public LemonaderHelper lemonaderHelper;
     private Lemonader lemonader;
 
+    @Inject
     public FirstLemonadeDealer() {
-        injectDependency();
+
     }
 
     @Override
@@ -29,8 +30,4 @@ public class FirstLemonadeDealer implements Dealer {
         System.out.println(CLASS_NAME + " has made lemonade");
     }
 
-    private void injectDependency() {
-        LemonaderComponent component = DaggerLemonaderComponent.create();
-        component.provideLemonaderHelper(this);
-    }
 }
