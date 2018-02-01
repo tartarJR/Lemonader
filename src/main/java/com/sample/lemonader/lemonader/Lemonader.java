@@ -6,6 +6,7 @@ import com.sample.lemonader.ingredient.Sugar;
 import com.sample.lemonader.ingredient.Water;
 
 public class Lemonader {
+
     private Water water;
     private Lemon lemon;
     private Sugar sugar;

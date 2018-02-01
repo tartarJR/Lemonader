@@ -1,9 +1,7 @@
 package com.sample.lemonader.dealer.impl;
 
-import com.sample.lemonader.di.DaggerLemonaderComponent;
-import com.sample.lemonader.di.LemonaderComponent;
-import com.sample.lemonader.lemonader.Lemonader;
 import com.sample.lemonader.dealer.Dealer;
+import com.sample.lemonader.lemonader.Lemonader;
 import com.sample.lemonader.util.LemonaderHelper;
 
 import javax.inject.Inject;
@@ -17,7 +15,6 @@ public class SecondLemonadeDealer implements Dealer {
 
     @Inject
     public SecondLemonadeDealer() {
-
     }
 
     @Override
@@ -29,6 +26,7 @@ public class SecondLemonadeDealer implements Dealer {
         System.out.println(CLASS_NAME + " has made lemonade");
     }
 
+    // setter/method injection
     @Inject
     public void setLemonaderHelper(LemonaderHelper lemonaderHelper) {
         this.lemonaderHelper = lemonaderHelper;

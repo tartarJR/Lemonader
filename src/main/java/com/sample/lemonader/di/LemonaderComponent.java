@@ -6,11 +6,6 @@ import dagger.Component;
 
 @Component(modules = {LemonaderHelperProvider.class})
 public interface LemonaderComponent {
-    void provideLemonaderHelper(FirstLemonadeDealer firstLemonadeDealer);
-
-    void provideLemonaderHelper(SecondLemonadeDealer secondLemonadeDealer);
-
     FirstLemonadeDealer getFirstLemonadeDealer();
-
     SecondLemonadeDealer getSecondLemonadeDealer();
 }
