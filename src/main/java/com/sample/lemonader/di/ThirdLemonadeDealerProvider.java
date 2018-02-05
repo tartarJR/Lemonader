@@ -1,7 +1,6 @@
 package com.sample.lemonader.di;
 
 import com.sample.lemonader.dealer.impl.ThirdLemonadeDealer;
-import com.sample.lemonader.lemonader.Lemonader;
 import dagger.Module;
 import dagger.Provides;
 
@@ -9,7 +8,7 @@ import dagger.Provides;
 public class ThirdLemonadeDealerProvider {
 
     @Provides
-    public ThirdLemonadeDealer getThirdLemonaderDealer(Lemonader lemonader) {
+    public ThirdLemonadeDealer getThirdLemonaderDealer() {
         return new ThirdLemonadeDealer();
     }
 }

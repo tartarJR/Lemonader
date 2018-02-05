@@ -16,15 +16,6 @@ public class ThirdLemonadeDealer implements Dealer {
     @Inject
     public Lemonader lemonader;
 
-    public ThirdLemonadeDealer() {
-
-    }
-
-    //@Inject
-    //public ThirdLemonadeDealer(Lemonader lemonader) {
-    //this.lemonader = lemonader;
-    //}
-
     @Override
     public void runLemonader(Water water, Lemon lemon, Sugar sugar) {
         System.out.println(CLASS_NAME + " is making lemonade..");

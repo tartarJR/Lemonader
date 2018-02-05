@@ -5,8 +5,6 @@ import com.sample.lemonader.ingredient.Lemon;
 import com.sample.lemonader.ingredient.Sugar;
 import com.sample.lemonader.ingredient.Water;
 
-import javax.inject.Inject;
-
 public class Lemonader {
 
     private WaterCooler waterCooler;
