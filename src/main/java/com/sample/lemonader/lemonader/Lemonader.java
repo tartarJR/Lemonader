@@ -9,6 +9,7 @@ public class Lemonader {
 
     private WaterCooler waterCooler;
 
+    // LemonaderProvider is used, no need for annotations
     public Lemonader(WaterCooler waterCooler) {
         this.waterCooler = waterCooler;
     }

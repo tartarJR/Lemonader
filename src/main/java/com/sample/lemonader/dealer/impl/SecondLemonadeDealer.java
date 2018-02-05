@@ -14,7 +14,7 @@ public class SecondLemonadeDealer implements Dealer {
 
     private Lemonader lemonader;
 
-    @Inject
+    @Inject // we don't have provider for SecondLemonadeDealer so we put @Inject annotation here
     public SecondLemonadeDealer() {
 
     }
@@ -26,7 +26,7 @@ public class SecondLemonadeDealer implements Dealer {
         System.out.println(CLASS_NAME + " has made lemonade");
     }
 
-    // setter/method injection of Lemonader via Dagger 2
+    // setter/method injection of Lemonader via Dagger 2, method must be public
     @Inject
     public void setLemonaderHelper(Lemonader lemonader) {
         this.lemonader = lemonader;

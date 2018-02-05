@@ -15,6 +15,7 @@ public class FirstLemonadeDealer implements Dealer {
     private Lemonader lemonader;
 
     // injecting Lemonader via constructor
+    // we don't have provider for SecondLemonadeDealer so we put @Inject annotation here
     @Inject
     public FirstLemonadeDealer(Lemonader lemonader) {
         this.lemonader = lemonader;

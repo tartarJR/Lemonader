@@ -6,7 +6,7 @@ import javax.inject.Inject;
 
 public class WaterCooler {
 
-    @Inject
+    @Inject // use inject annotation or a module with provider method (module must be added to AppComponent)
     public WaterCooler() {
     }
 

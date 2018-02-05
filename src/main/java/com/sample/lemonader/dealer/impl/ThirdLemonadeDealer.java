@@ -12,7 +12,7 @@ public class ThirdLemonadeDealer implements Dealer {
 
     private static final String CLASS_NAME = ThirdLemonadeDealer.class.getSimpleName();
 
-    // field injection of Lemonader via Dagger 2
+    // field injection of Lemonader via Dagger 2, field must be public
     @Inject
     public Lemonader lemonader;
 

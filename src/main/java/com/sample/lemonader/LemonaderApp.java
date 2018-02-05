@@ -62,6 +62,7 @@ public class LemonaderApp {
         s3.setAmount(2);
 
         Dealer thirdDealer = appComponent.getThirdLemonadeDealer();
+        // inject field of ThirdLemonadeDealer
         appComponent.injectLemonader((ThirdLemonadeDealer) thirdDealer);
         thirdDealer.runLemonader(w3, l3, s3);
     }
