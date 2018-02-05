@@ -8,27 +8,27 @@ import com.sample.lemonader.lemonader.Lemonader;
 
 import javax.inject.Inject;
 
-public class SecondLemonadeDealer implements Dealer {
+public class ThirdLemonadeDealer implements Dealer {
 
-    private static final String CLASS_NAME = SecondLemonadeDealer.class.getSimpleName();
+    private static final String CLASS_NAME = ThirdLemonadeDealer.class.getSimpleName();
 
-    private Lemonader lemonader;
-
+    // field injection of Lemonader via Dagger 2
     @Inject
-    public SecondLemonadeDealer() {
+    public Lemonader lemonader;
+
+    public ThirdLemonadeDealer() {
 
     }
+
+    //@Inject
+    //public ThirdLemonadeDealer(Lemonader lemonader) {
+    //this.lemonader = lemonader;
+    //}
 
     @Override
     public void runLemonader(Water water, Lemon lemon, Sugar sugar) {
         System.out.println(CLASS_NAME + " is making lemonade..");
         lemonader.makeLemonade(water, lemon, sugar);
         System.out.println(CLASS_NAME + " has made lemonade");
-    }
-
-    // setter/method injection of Lemonader via Dagger 2
-    @Inject
-    public void setLemonaderHelper(Lemonader lemonader) {
-        this.lemonader = lemonader;
     }
 }
