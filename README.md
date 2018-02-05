@@ -1,3 +1,3 @@
 # Lemonader
 
-Lemonader is simple Java console application which i created to learn how to use Dagger 2
+Lemonader is a simple Java console application for learning Dagger 2 basics
